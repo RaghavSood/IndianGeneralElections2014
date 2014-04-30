@@ -3,8 +3,8 @@ import os
 
 baseurl = "http://ceodelhi.gov.in/WriteReadData/AssemblyConstituency/AC"
 
-constituencyCount = 1
-constituencyTotal = 70 #Delhi has 70 sub sections
+constituencyCount = 0
+constituencyTotal = 69 #Delhi has 70 sub sections
 
 while constituencyCount <= constituencyTotal:
 
