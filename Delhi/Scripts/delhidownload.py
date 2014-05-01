@@ -3,8 +3,8 @@ import os
 
 baseurl = "http://ceodelhi.gov.in/WriteReadData/AssemblyConstituency/AC"
 
-constituencyCount = 67
-constituencyTotal = 70 #Delhi has 70 sub sections
+constituencyCount = 0
+constituencyTotal = 69 #Delhi has 70 sub sections
 
 while constituencyCount <= constituencyTotal:
 
@@ -22,7 +22,7 @@ while constituencyCount <= constituencyTotal:
             u = urllib2.urlopen(url)
             response_headers = u.info()
             if response_headers.type == 'application/pdf':
-                directory = "/Users/raghavsood/Downloads/Elections/Delhi/" + str(constituencyCount).zfill(3) + "/"
+                directory = "/Users/vedant/Downloads/Elections/Delhi/" + str(constituencyCount).zfill(3) + "/"
                 try:
                     os.makedirs(directory)
                 except OSError:
